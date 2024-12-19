@@ -34,6 +34,7 @@ export default function App() {
   }
 
   function startNewGameHandler() {
+   console.log('Final');
    setUserNumber(null);
    setGuessRounds(0);
 
@@ -54,6 +55,8 @@ export default function App() {
   
 
   return (
+    <>
+    <StatusBar style="light" />
     <LinearGradient colors={[Colors.primary700,Colors.accent500]} style={styles.rootScreen}>
       <ImageBackground source={require('./assets/images/background.png')} resizeMode='cover'
       style={styles.rootScreen}
@@ -65,6 +68,7 @@ export default function App() {
   </ImageBackground>
 
   </LinearGradient>
+  </>
   );
 }
 
